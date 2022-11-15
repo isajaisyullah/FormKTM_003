@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+
+            width: 800px;
+            height: 500px;
+            border: 5px solid green;
+            padding: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            box-shadow: 5px 5px 20px green;
+            background-color: rgb(233, 221, 221);
+        }
+        .title{
+            text-align: center;
+        }
+        .winfo{
+            float: left;
+            width: 500px;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        .container{
+            padding: 5px;
+        }
+        .wimg{
+               float: right;
+               width: 250px;
+               padding: 10px; 
+        }
+        .img{
+            width: 250px;
+            height: 300px;
+        }
+        .txt1{
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 20pt;
+        }
+        .txt2{
+            font-family: "cursive", "lucida handwriting";
+            font-size: 14pt;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="title">Kartu Tanda Mahasiswa</h1>
+        <h3 style="text-align: center;">RFID</h3>
+
+        
+        <div class="content">
+            <div class="wimg">
+                <img th:src="${gam}" class="img" alt="">
+            </div>
+            <div class="winfo">
+                <p th:text="${nam}" class="txt1">Isa Jaisyullah Hamid</p>
+                <p th:text="${nim}" class="txt1">20200140003</p>
+                <p th:text="${prod}" class="txt1">Teknologi Informasi</p>
+                <p th:text="${em}" class="txt2">isa.jaisyullah.ft20@mail.umy.ac.id</p>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    
+</body>
+</html>

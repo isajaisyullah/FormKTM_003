@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <style>
+        .center{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+        input{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
+            width: 500px;
+        }
+        .btncen{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center" >
+        <h3 style="text-align: center;">Data Mahasiswa</h3>
+        <form action="/view" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="Nama" name="nama">
+            <input type="text" placeholder="NIM" name="nim">
+            <input type="text" placeholder="Program Studi" name="prodi">
+            <input type="text" placeholder="email" name="email">
+            <input type="file" name="img">
+            <button class="btncen" value="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
